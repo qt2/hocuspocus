@@ -1,7 +1,7 @@
 import {
   IncomingHttpHeaders, IncomingMessage, ServerResponse,
 } from 'http'
-import { URLSearchParams } from 'url'
+// import { URLSearchParams } from 'url'
 import { Awareness } from 'y-protocols/awareness'
 import Connection from './Connection.js'
 import Document from './Document.js'
