@@ -1,5 +1,5 @@
 import {
-  createServer, IncomingMessage, Server as HTTPServer, ServerResponse,
+  IncomingMessage, Server as HTTPServer, ServerResponse,
 } from 'http'
 import WebSocket, { WebSocketServer } from 'ws'
 import { Hocuspocus } from './Hocuspocus.js'
@@ -13,7 +13,7 @@ export class Server {
 
   constructor(hocuspocus: Hocuspocus) {
     this.hocuspocus = hocuspocus
-    this.httpServer = createServer(this.requestHandler)
+    // this.httpServer = createServer(this.requestHandler)
     this.webSocketServer = new WebSocketServer({ noServer: true })
 
     this.setupWebsocketConnection()
